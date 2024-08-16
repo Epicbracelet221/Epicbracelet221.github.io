@@ -1,2 +1,2 @@
 # landing.github.io
-this a basic langing page
+this a basic landing page
