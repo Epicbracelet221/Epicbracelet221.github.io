@@ -1,0 +1,250 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #e0f7fa; /* Light cyan background */
+}
+
+/* Header Styles */
+
+header {
+  background-color: #00796b; /* Darker teal background */
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+header:hover {
+  background-color: #004d40; /* Darker teal on hover */
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  flex-wrap: wrap; /* Allow wrapping for responsive design */
+}
+
+header nav li {
+  margin: 0 10px; /* Adjusted margin for closer buttons */
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Add padding for better click area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+header nav a:hover {
+  background-color: #004d40; /* Darker teal background on hover */
+  color: #b2dfdb; /* Light cyan text color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Hero Section Styles */
+
+.hero {
+  background: url('background-image.jpg') no-repeat center center; /* Background image */
+  background-size: cover; /* Cover the entire section */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  animation: fadeIn 2s ease-in-out; /* Animation */
+  z-index: 1; /* Ensure it's above other content */
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: slideInUp 1s ease-out; /* Animation */
+  z-index: 2; /* Ensure text is above the image */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  animation: slideInUp 1.5s ease-out; /* Animation */
+  z-index: 2; /* Ensure text is above the image */
+}
+
+.hero button {
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  background-color: #004d40; /* Darker teal */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  z-index: 2; /* Ensure button is above the image */
+}
+
+.hero button:hover {
+  background-color: #f1d18ae1; /* Even darker teal on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Features Section Styles */
+
+.features {
+  background-color: #ffffff; /* White background */
+  padding: 40px;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.feature:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.feature i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+
+/* Products Section Styles */
+
+.products {
+  background-color: #f1f8e9; /* Light green background */
+  padding: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.product img:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+.product h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+
+/* Call-to-Action Section Styles */
+
+.cta {
+  background-color: #004d40; /* Darker teal background */
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.cta button {
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  background-color: #00332a; /* Darker teal */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.cta button:hover {
+  background-color: #00211a; /* Even darker teal on hover */
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #00796b; /* Darker teal background */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
